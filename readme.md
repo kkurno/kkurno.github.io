@@ -1,1 +1,0 @@
-https://kkurno.github.io
