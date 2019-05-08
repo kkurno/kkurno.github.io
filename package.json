@@ -1,0 +1,26 @@
+{
+  "name": "jetdo",
+  "version": "0.0.1",
+  "description": "https://kkurno.github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./src/js/index.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkurno/kkurno.github.io.git"
+  },
+  "keywords": [
+    "jetdo"
+  ],
+  "author": "kkurno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkurno/kkurno.github.io/issues"
+  },
+  "homepage": "https://github.com/kkurno/kkurno.github.io#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
