@@ -4,9 +4,10 @@
   "description": "https://kkurno.github.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify ./src/index.js -o bundle.js",
-    "dev": "watchify ./src/index.js -o bundle.js -d"
+    "hot-build": "watchify ./src/index.js -o bundle.js -d",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,12 @@
   "bugs": {
     "url": "https://github.com/kkurno/kkurno.github.io/issues"
   },
-  "homepage": "https://github.com/kkurno/kkurno.github.io#readme",
+  "homepage": "https://kkurno.github.io",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "watchify": "^3.11.1",
-    "express": "^4.16.4"
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
