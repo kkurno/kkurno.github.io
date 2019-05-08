@@ -4,8 +4,8 @@
   "description": "https://kkurno.github.io",
   "main": "index.js",
   "scripts": {
-    "build": "browserify ./src/index.js -o bundle.js",
-    "hot-build": "watchify ./src/index.js -o bundle.js -d",
+    "build": "browserify ./src/index.js -o ./build/bundle.js",
+    "hot-build": "watchify ./src/index.js -o ./build/bundle.js -d",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
